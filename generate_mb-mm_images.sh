@@ -11,7 +11,7 @@ generate_docker() {
              --pkg-manager apt \
              --freesurfer version=6.0.0 min=true \
              --miniconda \
-                conda_install="python=3.6 numpy pandas sklearn-lmer scipy rpy2=2.9.4 r-lme4 r-lmertest r-lsmeans tzlocal seaborn" \
+                conda_install="python=3.6 numpy pandas sklearn-lmer scipy rpy2=2.9.4 r-lme4 r-lmertest r-emmeans tzlocal seaborn" \
                 create_env='mb-mm' \
                 activate=true
 }
@@ -23,7 +23,7 @@ generate_singularity() {
             --freesurfer version=6.0.0 min=true \
             --install fsl-complete git num-utils gcc \
             --miniconda \
-               conda_install="python=3.6 numpy pandas sklearn-lmer scipy rpy2=2.9.4 r-lme4 r-lmertest r-lsmeans tzlocal seaborn" \
+               conda_install="python=3.6 numpy pandas sklearn-lmer scipy rpy2=2.9.4 r-lme4 r-lmertest r-emmeans tzlocal seaborn" \
                create_env='mb-mm' \
                activate=true
 }
