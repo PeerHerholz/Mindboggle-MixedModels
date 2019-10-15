@@ -9,7 +9,6 @@ generate_docker() {
   docker run --rm kaczmarj/neurodocker:0.5.0 generate docker \
              --base neurodebian:stretch-non-free \
              --pkg-manager apt \
-             --freesurfer version=6.0.0 min=true \
              --miniconda \
                 conda_install="python=3.6 numpy pandas sklearn-lmer scipy rpy2=2.9.4 r-lme4 r-lmertest r-emmeans tzlocal seaborn" \
                 create_env='mb-mm' \
@@ -20,8 +19,6 @@ generate_singularity() {
   docker run --rm kaczmarj/neurodocker:0.5.0 generate singularity \
             --base neurodebian:stretch-non-free \
             --pkg-manager apt \
-            --freesurfer version=6.0.0 min=true \
-            --install fsl-complete git num-utils gcc \
             --miniconda \
                conda_install="python=3.6 numpy pandas sklearn-lmer scipy rpy2=2.9.4 r-lme4 r-lmertest r-emmeans tzlocal seaborn" \
                create_env='mb-mm' \
