@@ -1,6 +1,6 @@
 [run]
 source =
-    mindboggle-mixedmodels
+    mindboggle_mixedmodels
 [report]
 omit =
     */python?.?/*

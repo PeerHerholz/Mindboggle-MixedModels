@@ -34,7 +34,7 @@ with open(path.join(here, 'requirements.txt')) as requirements_file:
 
 
 setup(
-    name='mindboggle-mixedmodels',
+    name='mindboggle_mixedmodels',
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     description="A BIDSapp for automated mixed model analyses of mindboggle outputs.",
@@ -51,7 +51,7 @@ setup(
     },
     include_package_data=True,
     package_data={
-        'mindboggle-mixedmodels': [
+        'mindboggle_mixedmodels': [
             # When adding files here, remember to update MANIFEST.in as well,
             # or else they will not be included in the distribution on PyPI!
             # 'path/to/data_file',

@@ -4,4 +4,4 @@ Installation
 
 At the command line::
 
-    $ pip install mindboggle-mixedmodels
+    $ pip install mindboggle_mixedmodels

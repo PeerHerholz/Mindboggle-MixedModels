@@ -7,7 +7,7 @@ Mindboggle-MixedModels
 
 .. image:: https://img.shields.io/pypi/v/mindboggle-mixedmodels.svg
         :target: https://pypi.python.org/pypi/mindboggle-mixedmodels
-        
+
 .. image:: https://img.shields.io/github/issues-pr/C0C0AN/Mindboggle-MixedModels.svg
     :alt: PRs
     :target: https://github.com/C0C0AN/Mindboggle-MixedModels/pulls/
