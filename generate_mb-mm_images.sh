@@ -34,16 +34,16 @@ if [ '$1' = 'local' ]; then
   if [ '$2' = 'docker' ]; then
     echo "docker image will be build locally"
     # build image using the saved files
-    docker build -t eegprep:test .
+    docker build -t mindboggle_mm:test .
   elif [ '$2' = 'singularity']; then
     echo "singularity image will be build locally"
     # build image using the saved files
-    singularity build eegprep.simg Singularity
+    singularity build mindboggle_mm.simg Singularity
   elif [ '$2' = 'both' ]; then
     echo "docker and singularity images will be build locally"
     # build images using the saved files
-    docker build -t eegprep:test .
-    singularity build eegprep.simg Singularity
+    docker build -t mindboggle_mm:test .
+    singularity build mindboggle_mm.simg Singularity
   elif [ -z "$2" ]; then
     echo "Please indicate which image should be build. You can choose from docker, singularity or both."
   fi
